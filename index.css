@@ -1,13 +1,14 @@
 body {
     margin: 0 auto;
     font-family: Times New Roman;
+
 }
 
 .zone {
    
     color:#FFF;
     font-size:2em;
-    
+    display: block;
     border:1px solid #bbb;
     transition: all 0.3s linear;
     border-color: black;
@@ -27,6 +28,7 @@ body {
     margin: 0;
     font-size: 0.7em;
     padding-bottom: 0px;
+    height: 65px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -72,64 +74,73 @@ a {
 .container {
     height: 100vh;
     background-image: url(./images/tenor.gif); 
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     position: relative;
     z-index: -1;
     border-color: black;
+    display: flex;
+    justify-content: center;
     
-    
-}
+ }
 
-.adjust {
-    position: absolute;
-    bottom: 165px;
-  right: 600px;
-  width: 600px;
-  height: 200px;
-  
-  cursor: pointer; 
- border-radius: 6px; 
+.rect {
+  position: absolute;
+  bottom: 80px;
+   display: block;
+   cursor: pointer; 
+  border-radius: 6px;
+  display: block; 
+  width: 100%;
+ }
 
-}
-
-.adjust  p {
+.rect  p {
   color: #2F4F4F;
   font-weight: bold;
 }
-.but{
-    cursor:pointer;
-    margin-left:185px;
+
+.kk {
+	display: flex;
+	justify-content: center;
+}
+
+.but {
+    cursor : pointer;
     border-color: black;
     font-size:20px;
+    border-radius: 22px;
+    padding: 16px;
     font-family: Georgia; 
     background-color: #D46A6A;
-    border-radius: 22px;
-    padding:20px;
     font-weight: bold;
     color: white;
+    margin-left: 
 }
-.adjust1 {
-    height: 400px;
-    position: relative;
+
+
+.adjust1  {
     background-color: black;
     border-bottom: 3px solid #181818;
+    display: grid;
+    grid-gap: 200px;
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
 }
-
-
 .gif {
-    position: absolute;
-    top: 45px;
-    left: 90px;
-    border: 2px solid white;
+	justify-self : end;
+	align-self: center;
 }
+
+
 .h{
-    position: absolute;
+   
     font-size: 25px;
 
-    right: 500px;
-    top: 35px;
-    height: 300px;
-    width: 500px;
+}
+.adjust2 {
+	  display: grid;
+      grid-gap: 200px;
+      grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
 }
 
 
@@ -142,38 +153,29 @@ p {
 }
 
 .adjust2 {
-    height: 600px;
-    position: relative;
     background-color: #080808;
     border-bottom: 3px solid #2F4F4F;
 }
 .g{
-    position: absolute;
+    
     font-size: 25px;
-    left: 300px;
-    bottom: 60px;
-    height: 300px;
-    width: 500px;
     font-family: Georgia;
+    height: 350px;
+    width: 450px;
+    justify-self:end;
 }
 
-.adjust2 h3 {
-    position: absolute;
-    left: 18px;
-    bottom: 65px;
-}
 
-.tv {
-    position: absolute;
-     bottom: 70px;
-    right: 400px;
-    border: 2px solid white;
+
+.tv { 
+    justify-self:center;
+    align-self: center;
 }
 
 
 .grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 20px;
     background-color:  #550000;
     border-color: #550000;
@@ -203,9 +205,24 @@ p {
  **********************************************************************/
 footer {
     text-align: center;
-    background-color: #303030;
+    background-color: #101010;
     border-color: black;
+    font-size: 80%;
+    font-color:#404040;
 
 }
 
+.foot {
 
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(4,1fr)
+
+}
+
+.foot li {
+	list-style-type: none;
+	font-size: 60%;
+	color:#909090;
+	cursor: pointer;
+}
