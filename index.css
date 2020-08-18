@@ -87,7 +87,7 @@ a {
 
 .rect {
   position: absolute;
-  bottom: 80px;
+  bottom: 15vh;
    display: block;
    cursor: pointer; 
   border-radius: 6px;
@@ -123,24 +123,30 @@ a {
     background-color: black;
     border-bottom: 3px solid #181818;
     display: grid;
-    grid-gap: 200px;
-    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    grid-gap: 100px;
+    grid-template-columns: repeat(2,1fr);
+    height: 40vh;
 }
 .gif {
-	justify-self : end;
+	justify-self : center;
 	align-self: center;
 }
 
 
 .h{
-   
+     height: 30vh;
+     width: 400px;
     font-size: 25px;
+    justify-self: start;
 
 }
 .adjust2 {
 	  display: grid;
-      grid-gap: 200px;
-      grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+      grid-gap: 100px;
+      grid-template-columns: repeat(2,1fr);
+      background-color: #080808;
+     border-bottom: 3px solid #2F4F4F;
+     height: 50vh;
 }
 
 
@@ -152,17 +158,14 @@ p {
     
 }
 
-.adjust2 {
-    background-color: #080808;
-    border-bottom: 3px solid #2F4F4F;
-}
 .g{
     
     font-size: 25px;
     font-family: Georgia;
-    height: 350px;
+    height: 40vh;
     width: 450px;
     justify-self:end;
+    align-self: center;
 }
 
 
@@ -175,7 +178,7 @@ p {
 
 .grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(4,1fr);
     grid-gap: 20px;
     background-color:  #550000;
     border-color: #550000;
