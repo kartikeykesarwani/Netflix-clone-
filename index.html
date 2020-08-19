@@ -11,7 +11,7 @@
       <ul class="main-nav">
           <li><img src="./images/netflixlogo.jpeg" width="75px" height="40px" style="margin-bottom: 0px;"></li>
           <li><a href=""><a href="login.html">Login</a></li>
-          <li><a href=""></a>Offers</li>
+          <li onclick="Caution()"><a href="" ></a>Message!</li>
           <li class="push"><a href="signin.html"><button style="background-color:white; border-color:white;border-radius:5px;font-size: 22px;cursor: pointer;">Sign Up!</button></a></li>
       </ul>
   </nav>
@@ -26,7 +26,7 @@
          <p>Watch Anywhere, Cancel anytime.</p>
        </div>
        <div class="kk">
-       <button class="but" style="cursor: pointer;">GET STARTED > </button>
+       <button class="but" style="cursor: pointer;">GET STARTED ></button>
      </div>
      </div>
   </div>
@@ -54,14 +54,14 @@
   </div>
 
   <div class="zone grid-wrapper">
-    <div class="box zone"><img src="./images/imgenglish1.jpg"></div>
-    <div class="box zone"><img src="./images/imgenglish2.jpg"></div>
-    <div class="box zone"><img src="./images/imgenglish3.jpg"></div>
-    <div class="box zone"><img src="./images/imgenglish4.jpg"></div>
-    <div class="box zone"><img src="./images/imghindi1.jpg"></div>
-    <div class="box zone"><img src="./images/imghindi2.jpeg"></div>
-    <div class="box zone"><img src="./images/imghindi3.jpg"></div>
-    <div class="box zone"><img src="./images/imganimated.jpg"></div>
+    <div class="box zone" onclick="this.innerHTML='Subscribe Now to watch Peaky Blinders!'"><img src="./images/imgenglish1.jpg"></div>
+    <div class="box zone" onclick="this.innerHTML='Subscribe Now to watch 13 Reasons Why!'"><img src="./images/imgenglish2.jpg"></div>
+    <div class="box zone" onclick="this.innerHTML='Subscribe Now to watch Money Heist!'"><img src="./images/imgenglish3.jpg"></div>
+    <div class="box zone" onclick="this.innerHTML='Subscribe Now to watch Maldicion!'"><img src="./images/imgenglish4.jpg"></div>
+    <div class="box zone" onclick="this.innerHTML='Subscribe Now to watch Badla!'"><img src="./images/imghindi1.jpg"></div>
+    <div class="box zone" onclick="this.innerHTML='Subscribe Now to watch Sacred Games!'"><img src="./images/imghindi2.jpeg"></div>
+    <div class="box zone" onclick="this.innerHTML='Subscribe Now to watch Delhi Crime!'"><img src="./images/imghindi3.jpg"></div>
+    <div class="box zone" onclick="this.innerHTML='Subscribe Now to watch Last Kids on Earth!'"><img src="./images/imganimated.jpg"></div>
   </div>
 
 
@@ -104,5 +104,11 @@
   <p style="color:#909090; ;font-size: 65%;background-color: #202020;margin-bottom: 0px;">Netflix India.</p>
   </footer>
 </div>
+<script>
+  function Caution(){
+    alert('We hope you are taking precautions to fight this global pandemic, COVID-19. Stay Home, Netflix and Chill !')
+  }
+
+</script>
 </body>
 </html>

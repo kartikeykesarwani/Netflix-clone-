@@ -1,0 +1,1 @@
+alert('We hope you are taking precautions to fight this global pandemic! Stay home, Netflix and Chill !');

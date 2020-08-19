@@ -15,11 +15,23 @@
             <input type="text" placeholder="Enter Username" name="username" required> <br> 
             <label>Password : </label> <br>  
             <input type="password" placeholder="Enter Password" name="password" required><br>  
-            <button type="submit">Login</button> <br>  
+            <button type="submit" onclick="validateForm()">Login</button> <br>  
             <input type="checkbox" checked="checked"> Remember me  <br> 
             <button type="button" class="cancelbtn"> Cancel</button> <br>  
             Forgot <a href="#"> password? </a> <br>  
-        </div>   
+        </div> 
+         <script>
+        function validateForm() {
+         var x = document.getElementsByTagName('input')[0].value;
+         var y = document.getElementsByTagName('input')[1].value;
+         if(x == '' || y == '')
+         {
+            alert('Please fill the required details.');
+         }
+      }
+
+              
+    </script>     
     </form>     
 </body>     
 </html>  
